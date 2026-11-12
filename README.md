@@ -131,12 +131,20 @@ db.password=12345
 
 ### Bước 3: Khởi chạy ứng dụng
 Có thể chọn một trong các cách sau:
-- **Cách 1 (Nhanh nhất):** Nhấp đúp chuột vào file **`run_app.bat`** tại thư mục gốc của dự án.
-- **Cách 2 (Maven CLI):** Mở terminal tại thư mục dự án và chạy:
+- **Cách 1 (Nhanh nhất - Tự động nhận diện):** Nhấp đúp chuột vào file **`run_app.bat`** tại thư mục gốc của dự án.
+- **Cách 2 (Máy chưa cài Maven):** Dùng Maven Wrapper tích hợp sẵn:
+  ```bash
+  # Trên Windows CMD / PowerShell:
+  .\mvnw.cmd exec:java -Dexec.mainClass="libman.main.MainApp7"
+
+  # Trên Linux / macOS:
+  ./mvnw exec:java -Dexec.mainClass="libman.main.MainApp7"
+  ```
+- **Cách 3 (Máy đã có sẵn Maven):**
   ```bash
   mvn exec:java -Dexec.mainClass="libman.main.MainApp7"
   ```
-- **Cách 3 (IDE):** Mở dự án trong NetBeans / IntelliJ IDEA / Eclipse / VS Code, tìm file `libman.main.MainApp7.java` và chọn **Run File**.
+- **Cách 4 (IDE):** Mở dự án trong NetBeans / IntelliJ IDEA / Eclipse / VS Code, tìm file `libman.main.MainApp7.java` và chọn **Run File**.
 
 ---
 
@@ -156,3 +164,4 @@ Có thể chọn một trong các cách sau:
 
 ---
 *Bản quyền học phần PT&TK HTTT - Học viện Công nghệ Bưu chính Viễn thông (PTIT)*
+
